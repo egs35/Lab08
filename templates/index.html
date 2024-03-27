@@ -9,9 +9,9 @@
     <h1>List of Poems</h1>
     <ul>
         {% for poem in poems %}
-            <li>{{ poem }}</li>
+            <li><a href="/poem/{{ loop.index0 }}">{{ poem.title }} by {{ poem.author }}</a></li>
         {% endfor %}
     </ul>
-    <a href="/poem"><button>Show Another Poem</button></a>
 </body>
 </html>
+
