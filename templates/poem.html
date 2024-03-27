@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poem</title>
+    <title>{{ poem.title }}</title>
 </head>
 <body>
-    <h1>Poem</h1>
-    <p>{{ poem }}</p>
+    <h1>{{ poem.title }}</h1>
+    <h2>By {{ poem.author }}</h2>
+    <p>{{ poem.text }}</p>
     <a href="/"><button>Back to Poem List</button></a>
 </body>
 </html>
+
